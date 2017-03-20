@@ -62,19 +62,11 @@ public class SearchActivity extends AppCompatActivity implements FilterFragment.
             articles = new ArrayList<>();
             adapter = new ArticleArrayAdapter(this,articles);
             gvResults.setAdapter(adapter);
-//            etQuery = (EditText) findViewById(R.id.etQuery);
-//            btnSearch = (Button) findViewById(R.id.btnSearch);
-//
-//            btnSearch.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View v) {
-//                    onArticleSearch(query);
-//                }
-//            });
+
 
             articleClient = new ArticleClient();
 
-            gvResults.setOnScrollListener(new EndlessScrollListener(0,0) {
+            gvResults.setOnScrollListener(new EndlessScrollListener(5,0) {
                 @Override
                 public boolean onLoadMore(int page, int totalItemsCount) {
 

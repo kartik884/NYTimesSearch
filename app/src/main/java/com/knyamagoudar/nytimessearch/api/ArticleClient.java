@@ -95,7 +95,6 @@ public class ArticleClient {
         reqParams.put("page",page);
 
         try{
-            if (Filter.class != null){
                 if(Filter.beginDate != null){
                     reqParams.put("begin_date",parseDateString(Filter.beginDate));
                 }
@@ -120,8 +119,6 @@ public class ArticleClient {
 
                 }
                 Log.d("info",reqParams.toString());
-            }
-
 
         }catch(Exception ex){
             ex.printStackTrace();
