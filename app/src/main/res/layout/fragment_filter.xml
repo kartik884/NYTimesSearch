@@ -1,0 +1,146 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.knyamagoudar.nytimessearch.fragments.FilterFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+
+        <EditText
+            android:id="@+id/etBeginDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Begin Date"
+            android:textStyle="bold"
+            android:editable="false"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/tvBeginDate"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:paddingRight="10dp"
+                android:layout_gravity="center_horizontal"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:id="@+id/ibBeginDate"
+                android:src="@android:drawable/ic_menu_my_calendar"/>
+        </LinearLayout>
+
+
+
+
+        <EditText
+            android:id="@+id/etEndDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="End Date"
+            android:textStyle="bold"
+            android:editable="false"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/tvEndDate"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:layout_gravity="center_horizontal"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:id="@+id/ibEndDate"
+                android:src="@android:drawable/ic_menu_my_calendar"/>
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/etSortOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sort Order"
+            android:paddingTop="50dp"
+            android:textStyle="bold"
+            android:editable="false"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spSortOrder"
+            android:layout_gravity="center_horizontal"
+            />
+
+
+        <EditText
+            android:id="@+id/etNewsDesk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="News Desk Values"
+            android:paddingTop="50dp"
+            android:textStyle="bold"
+            android:editable="false"
+            android:layout_gravity="center_horizontal"
+            />
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="20dp"
+            android:layout_gravity="center_horizontal">
+            <CheckBox android:id="@+id/checkbox_arts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/arts"
+                />
+            <CheckBox android:id="@+id/checkbox_fashion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fashion" />
+
+            <CheckBox android:id="@+id/checkbox_sports"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sports" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSaveFilterData"
+            android:text="Save"
+            />
+
+
+    </LinearLayout>
+
+
+</FrameLayout>
